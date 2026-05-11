@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RSA skaitmeninis parasas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="page-header">
+        <h1>RSA skaitmeninis parasas</h1>
+      </header>
+
+      <section class="form-panel">
+        <div class="key-grid">
+          <div class="form-group">
+            <label for="p">Pirminis skaicius p</label>
+            <input id="p" type="number" />
+          </div>
+
+          <div class="form-group">
+            <label for="q">Pirminis skaicius q</label>
+            <input id="q" type="number" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Pranesimas</label>
+          <textarea id="message" rows="5"></textarea>
+        </div>
+
+        <label class="checkbox-row">
+          <input id="changeSignature" type="checkbox" />
+          <span>Pakeisti parasa pries siunciant</span>
+        </label>
+
+        <button id="sendButton">Pasirasyti ir siusti</button>
+
+        <pre id="result"></pre>
+      </section>
+    </main>
+
+    <script src="front.js"></script>
+  </body>
+</html>
